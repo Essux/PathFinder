@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=sql
+comment0.target=void\ printTable(java.lang.String)
+comment1.params=user\ pass\ name
+comment1.target=void\ createUser(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=user\ pass
+comment2.target=boolean\ checkUser(java.lang.String,\ java.lang.String)
+comment3.params=argv
+comment3.target=void\ main(java.lang.String[])
+numComments=4
