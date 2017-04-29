@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.gui.useraccess.UserAccessController">
+    <children>
+      <JFXButton fx:id="registerBut" buttonType="RAISED" contentDisplay="CENTER" layoutX="181.0" layoutY="261.0" onAction="#register" prefHeight="37.0" prefWidth="79.0" ripplerFill="#545454" style="-fx-background-color: #1565c0;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <VBox layoutX="120.0" layoutY="14.0" prefHeight="236.0" prefWidth="201.0" spacing="27.0">
+         <children>
+            <JFXTextField focusColor="#1565c0" labelFloat="true" promptText="Username" />
+            <JFXTextField focusColor="#1565c0" labelFloat="true" promptText="Name" />
+            <JFXPasswordField focusColor="#1565c0" labelFloat="true" promptText="Password" />
+            <JFXPasswordField focusColor="#1565c0" labelFloat="true" promptText="Confirm password" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

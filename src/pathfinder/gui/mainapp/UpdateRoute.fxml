@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="790.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pathfinder.gui.mainapp.UpdateRouteController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="286.0" layoutY="126.0" prefHeight="116.0" prefWidth="222.0" spacing="30.0">
+         <children>
+            <JFXTextField focusColor="#1565c0" labelFloat="true" promptText="Average Time (min)" text="120">
+               <font>
+                  <Font name="Roboto Regular" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox minHeight="25.0" prefHeight="25.0" prefWidth="206.0" promptText="Available" />
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="302.0" prefHeight="40.0" prefWidth="83.0" ripplerFill="#545454" style="-fx-background-color: #1565c0;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox layoutX="272.0" layoutY="44.0" minHeight="25.0" prefHeight="34.0" prefWidth="249.0" promptText="Select transport" />
+   </children>
+</AnchorPane>

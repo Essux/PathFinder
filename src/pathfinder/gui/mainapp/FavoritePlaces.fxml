@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="475.0" prefWidth="790.0" stylesheets="@FavoritePlaces.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.gui.mainapp.FavoritePlacesController">
+   <children>
+      <Label contentDisplay="RIGHT" layoutX="53.0" layoutY="22.0" prefHeight="48.0" prefWidth="150.0" text="Favorite Places">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="listView" layoutX="112.0" layoutY="80.0" prefHeight="136.0" prefWidth="216.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="790.0" stylesheets="@MainStage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.gui.mainapp.MainStageController">
+   <children>
+      <AnchorPane prefHeight="49.0" prefWidth="790.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #1565c0;">
+         <children>
+            <ImageView fx:id="menuButton" fitHeight="31.0" fitWidth="30.0" layoutX="14.0" layoutY="8.0" onMouseClicked="#toggleDrawer" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/hamburger.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <StackPane prefHeight="475.0" prefWidth="790.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXDrawer fx:id="sidePane" defaultDrawerSize="180.0" prefHeight="473.0" prefWidth="187.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

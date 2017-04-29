@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.gui.useraccess.UserAccessController">
+   <children>
+      <JFXTextField focusColor="#1565c0" labelFloat="true" layoutX="134.0" layoutY="52.0" maxWidth="175.0" minWidth="158.0" prefHeight="31.0" prefWidth="175.0" promptText="Username" />
+      <JFXPasswordField focusColor="#1565c0" labelFloat="true" layoutX="134.0" layoutY="123.0" maxWidth="175.0" minWidth="158.0" prefHeight="31.0" prefWidth="175.0" promptText="Password" />
+      <JFXButton fx:id="loginBut" buttonType="RAISED" contentDisplay="CENTER" layoutX="180.0" layoutY="194.0" onAction="#login" prefHeight="37.0" prefWidth="79.0" ripplerFill="#545454" style="-fx-background-color: #1565c0; -fx-cursor: hand;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="119.0" layoutY="253.0" text="Don't have an account?">
+         <font>
+            <Font name="Roboto Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="registerLabel" layoutX="272.0" layoutY="253.0" onMouseClicked="#goToRegister" style="-fx-cursor: hand;" text="Register">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
