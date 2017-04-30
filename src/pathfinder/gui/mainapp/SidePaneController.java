@@ -10,6 +10,7 @@ import com.jfoenix.controls.JFXDrawer;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +19,7 @@ import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
@@ -53,13 +55,13 @@ public class SidePaneController implements Initializable {
         //Relative path through components
         Parent root = but1.getScene().getRoot();
         StackPane sp = (StackPane) root.getChildrenUnmodifiable().get(1);
-        
+               
         toggleDrawer(new ActionEvent());
         
         sp.getChildren().remove(0);
         
         AnchorPane ap = FXMLLoader.load(getClass().getResource("/pathfinder/gui/mainapp/UpdateUser.fxml"));
-        sp.getChildren().add(0, ap);
+        sp.getChildren().add(0, ap);        
     }
     
     @FXML
@@ -101,6 +103,20 @@ public class SidePaneController implements Initializable {
         sp.getChildren().remove(0);
         
         AnchorPane ap = FXMLLoader.load(getClass().getResource("/pathfinder/gui/mainapp/FavoritePlaces.fxml"));
+        sp.getChildren().add(0, ap);
+    }
+    
+    @FXML
+    void goToMapView(ActionEvent event) throws IOException {
+        //Relative path through components
+        Parent root = but2.getScene().getRoot();
+        StackPane sp = (StackPane) root.getChildrenUnmodifiable().get(1);
+        
+        toggleDrawer(new ActionEvent());
+        
+        sp.getChildren().remove(0);
+        
+        AnchorPane ap = FXMLLoader.load(getClass().getResource("/pathfinder/gui/mainapp/MapMain.fxml"));
         sp.getChildren().add(0, ap);
     }
     

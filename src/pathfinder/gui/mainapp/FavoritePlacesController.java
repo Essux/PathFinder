@@ -38,5 +38,4 @@ public class FavoritePlacesController implements Initializable {
         }
         listView.depthProperty().set(1);
     }    
-    
 }

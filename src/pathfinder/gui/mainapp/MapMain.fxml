@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.lynden.gmapsfx.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pathfinder.gui.mainapp.MapMainController">
+    <children>        
+        <GoogleMapView fx:id="mapView" prefHeight="475.0" prefWidth="790.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXSpinner fx:id="spinner" layoutX="350.0" layoutY="230.0" />
+         </children></GoogleMapView>
+    </children>
+</AnchorPane>

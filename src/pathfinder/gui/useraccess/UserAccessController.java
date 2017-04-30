@@ -58,8 +58,18 @@ public class UserAccessController implements Initializable {
     }
     
     @FXML
-    void register(ActionEvent event) {
+    void register(ActionEvent event) throws IOException {
         System.out.println("Registering...");
+        Parent root = FXMLLoader.load(getClass().getResource("/pathfinder/gui/mainapp/MainStage.fxml"));
+        
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("PathFinder");
+        stage.show();
+        
+        Stage curStage = (Stage) registerBut.getScene().getWindow();
+        curStage.close();
     }
     
     /**

@@ -26,8 +26,8 @@
       </AnchorPane>
       <StackPane prefHeight="475.0" prefWidth="790.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <fx:include source="MapMain.fxml" />
+            <AnchorPane mouseTransparent="true" prefHeight="200.0" prefWidth="200.0">
                <children>
                   <JFXDrawer fx:id="sidePane" defaultDrawerSize="180.0" prefHeight="473.0" prefWidth="187.0" />
                </children>
