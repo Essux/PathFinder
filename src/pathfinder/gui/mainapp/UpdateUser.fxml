@@ -22,12 +22,12 @@
                   <Font name="Roboto Regular" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField focusColor="#1565c0" promptText="Password">
+            <JFXPasswordField focusColor="#1565c0" labelFloat="true" promptText="Password">
                <font>
                   <Font name="Roboto Regular" size="14.0" />
                </font>
             </JFXPasswordField>
-            <JFXPasswordField focusColor="#1565c0" promptText="Confirm Password">
+            <JFXPasswordField focusColor="#1565c0" labelFloat="true" promptText="Confirm Password">
                <font>
                   <Font name="Roboto Regular" size="14.0" />
                </font>

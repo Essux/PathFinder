@@ -3,13 +3,14 @@ package pathfinder.gui.mainapp;
 import com.jfoenix.controls.JFXSpinner;
 import com.lynden.gmapsfx.GoogleMapView;
 import com.lynden.gmapsfx.MapComponentInitializedListener;
-import com.lynden.gmapsfx.MapReadyListener;
 import com.lynden.gmapsfx.javascript.object.GoogleMap;
-import com.lynden.gmapsfx.javascript.object.InfoWindow;
-import com.lynden.gmapsfx.javascript.object.InfoWindowOptions;
 import com.lynden.gmapsfx.javascript.object.LatLong;
+import com.lynden.gmapsfx.javascript.object.MVCArray;
 import com.lynden.gmapsfx.javascript.object.MapOptions;
+import com.lynden.gmapsfx.javascript.object.MapShape;
 import com.lynden.gmapsfx.javascript.object.MapTypeIdEnum;
+import com.lynden.gmapsfx.shapes.Polyline;
+import com.lynden.gmapsfx.shapes.PolylineOptions;
 //import com.lynden.gmapsfx.javascript.object.MapType;
 import com.lynden.gmapsfx.javascript.object.Marker;
 import com.lynden.gmapsfx.javascript.object.MarkerOptions;
@@ -85,6 +86,15 @@ public class MapMainController implements Initializable, MapComponentInitialized
         map.addMarker( bobUnderwoodMarker );
         map.addMarker( tomChoiceMarker );
         map.addMarker( fredWilkieMarker );
+        
+        LatLong[] ary = new LatLong[]{joeSmithLocation, joshAndersonLocation, bobUnderwoodLocation, tomChoiceLocation, fredWilkieLocation};
+        MVCArray mvc = new MVCArray(ary);
+        PolylineOptions polyOpts = new PolylineOptions()
+            .path(mvc)
+            .strokeColor("red")
+            .strokeWeight(2);
+        Polyline poly = new Polyline(polyOpts);
+        map.addMapShape((MapShape) poly);
         
         spinner.setVisible(false);
         /*InfoWindowOptions infoWindowOptions = new InfoWindowOptions();
